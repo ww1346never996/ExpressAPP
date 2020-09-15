@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DeliveryConfirmActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/input"/>
+
+<!-- 创建一个横线，颜色为#808080（深灰色）、高度为1dp -->
+<View
+android:layout_width="fill_parent"
+android:layout_height="1dp"
+android:layout_marginTop="20dp"
+android:background="#808080"/>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="50dp"
+android:orientation="horizontal">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="10dp"
+    android:text="快件运单号："
+    android:textSize="16sp"/>
+<TextView
+    android:id="@+id/tv_delivery_confirm_expnum"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="8dp"
+    android:textSize="16sp"/>
+</LinearLayout>
+<View
+android:layout_width="fill_parent"
+android:layout_height="1dp"
+android:background="#bfbfbf"/>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="50dp"
+android:orientation="horizontal">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="10dp"
+    android:text="收件人手机号："
+    android:textSize="16sp"/>
+<TextView
+    android:id="@+id/tv_delivery_confirm_tel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="8dp"
+    android:textSize="16sp"/>
+</LinearLayout>
+<View
+android:layout_width="fill_parent"
+android:layout_height="1dp"
+android:background="#808080"/>
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="20dp">
+</LinearLayout>
+<View
+android:layout_width="fill_parent"
+android:layout_height="1dp"
+android:background="#808080"/>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="50dp"
+android:orientation="horizontal">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="10dp"
+    android:text="柜体名称："
+    android:textSize="16sp"/>
+<TextView
+    android:id="@+id/tv_delivery_confirm_cabnum"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="8dp"
+    android:background="@null"
+    android:textSize="16sp"/>
+</LinearLayout>
+<View
+android:layout_width="fill_parent"
+android:layout_height="1dp"
+android:background="#bfbfbf"/>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="50dp"
+android:orientation="horizontal">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="10dp"
+    android:text="箱体编号："
+    android:textSize="16sp"/>
+<TextView
+    android:id="@+id/tv_delivery_confirm_cellnum"
+    android:layout_width="40dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="8dp"
+    android:gravity="center"
+    android:text="100"
+    android:textColor="#808080"
+    android:textSize="20sp"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:text="号"
+    android:textSize="16sp"/>
+</LinearLayout>
+<View
+android:layout_width="fill_parent"
+android:layout_height="1dp"
+android:background="#808080"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_vertical"
+android:layout_marginLeft="10dp"
+android:layout_marginTop="10dp"
+android:text="包裹投递后请确保箱门完全关闭"
+android:textSize="15sp"/>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="50dp"
+android:layout_marginTop="15dp"
+android:orientation="horizontal">
+<!--
+下方代码解释
+android:layout_width="0dp"一般与android:layout_weight="1" 同时使用，设置控件
+按权重大小布局
+android:background="@drawable/btn_white"设置Button的背景属性为btn_white, btn_
+white是作者定义的Button样式，详情请见工程目录res\drawable-hdpi\btn_white.xml文件
+android:gravity="center"设置RadioButton中的文字居中
+android:textColor="#cc0000"设置字体颜色为#cc0000（红色）
+-->
+<Button
+    android:id="@+id/btn_delivery_confirm_quit"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_weight="1"
+    android:text="取消投递"
+    android:background="@drawable/button_circle_shape_05"
+    android:textColor="#ffffff"/>
+<Button
+    android:id="@+id/btn_delivery_confirm_yes"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:textColor="#ffffff"
+    android:background="@drawable/button_circle_shape_05"
+    android:layout_weight="1"
+    android:text="完成投递"/>
+</LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Activity.InputCabNumActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/input"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="0dp"
+            android:background="#bfbfbf"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:text="柜体编号："
+                android:textSize="16sp"/>
+            <!--
+            下方代码解释
+            android:background="@null"EditText控件默认背景是有边框的，该代码设置EditText控
+            件为无边框状态
+            android:hint="请输入柜体编号"EditText控件在无文本输入时显示"请输入柜体编号"的提示
+            -->
+            <EditText
+                android:id="@+id/et_inputcabnum_cabnum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:hint="请输入柜体编号"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf"/>
+        <!--
+            下方代码解释
+            android:background="@drawable/btn_white" 设置该Button的背景属性为btn_white，
+            btn_white是作者定义的Button样式，为白色有边框的Button，详情请见工程目录res\drawable
+            -hdpi\btn_white.xml文件
+            -->
+        <Button
+            android:id="@+id/btn_inputcabnum_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_circle_shape_07"
+            android:text="下一步"/>
+
+
+        <TextView
+            android:id="@+id/tv_show_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
